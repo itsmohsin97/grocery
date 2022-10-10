@@ -1,0 +1,35 @@
+.full-width-div {
+  background-color: rgb(94, 145, 168);
+  padding: 150px;
+  position: absolute;
+  width: 100%;
+}
+
+.full-width-div h2 {
+  width: 10%;
+
+  color: rgb(46, 37, 37);
+  letter-spacing: 5px;
+}
+
+.table,
+th,
+td {
+  color: white;
+  border: 2px solid black;
+  padding: 12px;
+}
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input {
+  border-radius: 30px;
+}
+
+.button {
+  border-radius: 30px;
+}
