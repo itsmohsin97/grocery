@@ -4,18 +4,18 @@
   "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "bi": "electron-builder",
+    "bi": "electron-builder -p always",
     "start": "ng build --base-href ./ && electron .",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "build":{
-    "publish":[
+  "build": {
+    "publish": [
       {
         "provider": "github",
-        "owner" : "itsmohsin97",
+        "owner": "itsmohsin97",
         "repo": "grocery"
       }
     ]
