@@ -4,11 +4,21 @@
   "main": "app.js",
   "scripts": {
     "ng": "ng",
+    "bi": "electron-builder",
     "start": "ng build --base-href ./ && electron .",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "build":{
+    "publish":[
+      {
+        "provider": "github",
+        "owner" : "itsmohsin97",
+        "repo": "grocery"
+      }
+    ]
   },
   "private": true,
   "dependencies": {
@@ -22,22 +32,12 @@
     "@angular/platform-browser": "~10.2.0",
     "@angular/platform-browser-dynamic": "~10.2.0",
     "@angular/router": "~10.2.0",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.12.3",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
-  },
-  "devDependencies": {
     "@angular-devkit/build-angular": "~0.1002.0",
     "@angular/cli": "~10.2.0",
     "@angular/compiler-cli": "~10.2.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
-    "bootstrap": "^4.6.0",
-    "codelyzer": "^6.0.0",
-    "electron": "^21.2.3",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",
@@ -48,6 +48,18 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
+    "typescript": "~4.0.2",
+    "bootstrap": "^4.6.0",
+    "codelyzer": "^6.0.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.12.3",
+    "rxjs": "~6.6.0",
+    "electron-log": "^4.4.8",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "electron": "^21.2.3",
+    "electron-updater": "^5.3.0"
   }
 }
