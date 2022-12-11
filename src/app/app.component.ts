@@ -25,6 +25,7 @@ export class AppComponent {
     this.grandTotal = 0;
     for (let i = 0; i < this.listofDetails.length; i++) {
       this.grandTotal = this.grandTotal + this.listofDetails[i].total;
+      let result = this.grandTotal/3;
     }
   }
   public reset() {
