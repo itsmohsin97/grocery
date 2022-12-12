@@ -1,6 +1,6 @@
 {
-  "name": "typescriptproj",
-  "version": "0.0.1",
+  "name": "grocery",
+  "version": "0.0.2",
   "main": "app.js",
   "scripts": {
     "ng": "ng",
@@ -18,7 +18,11 @@
         "owner": "itsmohsin97",
         "repo": "grocery"
       }
-    ]
+    ],
+    "asar": true,
+    "directories": {
+      "output": "release/"
+    }
   },
   "private": true,
   "dependencies": {

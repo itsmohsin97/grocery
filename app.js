@@ -4,6 +4,7 @@ const path = require("path");
 const { autoUpdater } = require('electron-updater')
 const log = require('electron-log');
 log.transports.file.resolvePath = () => path.join('I:/Angular/finalgrocery/logs', 'logs/main.log');
+log.log("Applicatoin version" + app.getVersion())
 log.info("hello ,Log");
 log.warn("some problem appears");
 let mainWindow
@@ -21,17 +22,22 @@ function createWindow() {
     autoUpdater.checkForUpdatesAndNotify()
   })
 
-  autoUpdater.on("update-available", () => {
-    log.info("update-avaliable")
-  })
   autoUpdater.on("checking-for-update", () => {
-    log.info("checking-for-update")
+    log.info("checking for update ...");
   })
-  autoUpdater.on("update-not-available", () => {
-    log.info("update-not-available")
+  autoUpdater.on("update-available", (info) => {
+    log.info("update-avaliable");
   })
-  autoUpdater.on("update-downloaded", () => {
-    log.info("update-downloaded")
+  autoUpdater.on("update-not-available", (info) => {
+    log.info("update-not-available");
+  })
+  autoUpdater.on('error', (err) => {
+    log.info("error in auto updater", + err);
+  })
+
+  autoUpdater.on("download-progress", (progressTrack) => {
+    log.info("download-progress")
+    log.info(progressTrack)
   })
 
   mainWindow.loadURL(

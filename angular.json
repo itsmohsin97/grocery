@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "typescriptproj": {
+    "grocery": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -26,7 +26,7 @@
             "styles": [
               "./src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
-            
+
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "typescriptproj:build"
+            "browserTarget": "grocery:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "typescriptproj:build:production"
+              "browserTarget": "grocery:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "typescriptproj:build"
+            "browserTarget": "grocery:build"
           }
         },
         "test": {
@@ -117,18 +117,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "typescriptproj:serve"
+            "devServerTarget": "grocery:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "typescriptproj:serve:production"
+              "devServerTarget": "grocery:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "typescriptproj",
+  "defaultProject": "grocery",
   "cli": {
     "analytics": false
   }
