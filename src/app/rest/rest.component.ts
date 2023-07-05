@@ -7,23 +7,23 @@ import { RestService } from '../rest.service';
   styleUrls: ['./rest.component.css']
 })
 export class RestComponent implements OnInit {
-  items:Lists[]= [];
+  items: Lists[] = [];
 
-  constructor(public rs:RestService) {
+  constructor(public rs: RestService) {
 
-   }
+  }
   ngOnInit(): void {
 
-    this.rs.getLists().subscribe((response) =>{
-      this.items=response
+    this.rs.getLists().subscribe((response) => {
+      this.items = response
     })
   }
 
-key:string = 'id';
-reverse:boolean =false;
-sort(key){
-  this.key =key;
-  this.reverse =! this.reverse;
-}
+  key: string = 'id';
+  reverse: boolean = false;
+  sort(key) {
+    this.key = key;
+    this.reverse = !this.reverse;
+  }
 
 }
