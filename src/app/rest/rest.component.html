@@ -1,0 +1,21 @@
+<h2>Dashboard</h2>
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th (click)="sort('id')">No &nbsp;<i class="fa fa-sort"></i></th>
+            <th>Product-Name</th>
+            <th>Quantity</th>
+            <th>Price-Per-Kg</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr *ngFor="let item of items | orderBy: key: reverse" >
+            <td>{{item.id}}</td>
+            <td>{{item.productName}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.pricePerKg}}</td>
+         </tr>
+    </tbody>
+</table>

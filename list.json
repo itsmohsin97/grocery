@@ -1,0 +1,40 @@
+{
+    "Items": [
+        {
+            "id": 1,
+            "productName": "Rice",
+            "quantity": 5,
+            "pricePerKg": 58
+        },
+        {
+            "id": 2,
+            "productName": "Sugar",
+            "quantity": 5,
+            "pricePerKg": 34
+        },
+        {
+            "id": 3,
+            "productName": "Dal",
+            "quantity": 5,
+            "pricePerKg": 58
+        },
+        {
+            "id": 4,
+            "productName": "Salt",
+            "quantity": 5,
+            "pricePerKg": 58
+        },
+        {
+            "id": 5,
+            "productName": "Wheat",
+            "quantity": 5,
+            "pricePerKg": 58
+        },
+        {
+            "id": 6,
+            "productName": "Rava",
+            "quantity": 5,
+            "pricePerKg": 58
+        }
+    ]
+}
