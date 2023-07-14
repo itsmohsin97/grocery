@@ -3,7 +3,7 @@ const url = require("url");
 const path = require("path");
 const { autoUpdater } = require('electron-updater')
 const log = require('electron-log');
-log.transports.file.resolvePath = () => path.join('I:/Angular/finalgrocery/logs', 'logs/main.log');
+// log.transports.file.resolvePath = () => path.join('I:/Angular/finalgrocery/logs', 'logs/main.log');
 log.log("Applicatoin version" + app.getVersion())
 log.info("hello ,Log");
 log.warn("some problem appears");

@@ -8,6 +8,7 @@
     "start": "ng build --base-href ./ && electron .",
     "build": "ng build",
     "test": "ng test",
+    "electron": "electron .",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
